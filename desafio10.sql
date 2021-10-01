@@ -6,10 +6,10 @@ BEGIN
     DECLARE songs_history INT;
     SELECT 
     COUNT(user_id) AS `quantidade_musicas_no_historico`
-	FROM
-		SpotifyClone.User_Song
-	WHERE
-		user_id = id_user INTO songs_history;
+  FROM
+    SpotifyClone.User_Song
+  WHERE
+    user_id = id_user INTO songs_history;
     RETURN songs_history;
 END $$
 
