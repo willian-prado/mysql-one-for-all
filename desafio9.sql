@@ -6,8 +6,8 @@ CREATE PROCEDURE albuns_do_artista(
 )
 BEGIN
   SELECT a.name AS `artista`, al.title AS `album` FROM SpotifyClone.Album AS al
-	INNER JOIN SpotifyClone.Artist AS a ON a.id = al.artist_id
-	WHERE a.name = artist_name;
+  INNER JOIN SpotifyClone.Artist AS a ON a.id = al.artist_id
+  WHERE a.name = artist_name;
 END $$
 
 DELIMITER ;
