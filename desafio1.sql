@@ -64,27 +64,27 @@ CREATE TABLE User_Artist (
 
 INSERT INTO Artist(name)
 VALUES
-	('Walter Phoenix'),
+    ('Walter Phoenix'),
     ('Peter Strong'),
     ('Lance Day'),
     ('Freedie Shannon');
 
 INSERT INTO Plan(type, price)
 VALUES
-	('gratuito', 0),
+    ('gratuito', 0),
     ('familiar', 7.99),
     ('universitário', 5.99);
 
 INSERT INTO User(name, age, plan_id)
 VALUES
-	('Thati', 23, 1),
+    ('Thati', 23, 1),
     ('Cintia', 35, 2),
     ('Bill', 20, 3),
     ('Roger', 45, 1);
 
 INSERT INTO Album(title, artist_id)
 VALUES
-	('Envious', 1),
+    ('Envious', 1),
     ('Exuberant', 1),
     ('Hallowed Steam', 2),
     ('Incandescent', 3),
@@ -110,31 +110,31 @@ VALUES
   ('Thang Of Thunder', 5, 4),
   ('Words Of Her Life', 5, 4),
   ('Without My Streets', 5, 4);
-	
+
 INSERT INTO User_Song(user_id, song_id)
 VALUES
-	(1, 1),
-	(1, 6),
-	(1, 14),
-	(1, 16),
-	(2, 13),
-	(2, 17),
-	(2, 2),
-	(2, 15),
-	(3, 4),
-	(3, 16),
-	(3, 6),
-	(4, 3),
-	(4, 18),
-	(4, 11);
+    (1, 1),
+    (1, 6),
+    (1, 14),
+    (1, 16),
+    (2, 13),
+    (2, 17),
+    (2, 2),
+    (2, 15),
+    (3, 4),
+    (3, 16),
+    (3, 6),
+    (4, 3),
+    (4, 18),
+    (4, 11);
 
 INSERT INTO User_Artist(user_id, artist_id)
 VALUES
-	(1, 1),
-	(1, 4),
-	(1, 3),
-	(2, 1),
-	(2, 3),
-	(3, 2),
-	(3, 1),
-	(4, 4);
+    (1, 1),
+    (1, 4),
+    (1, 3),
+    (2, 1),
+    (2, 3),
+    (3, 2),
+    (3, 1),
+    (4, 4);
