@@ -4,7 +4,7 @@
 
 **Contexto**
 
-Continuando nossos estudos sobre SQL, nesse trabalho treinamos nossa habilidade de construir um banco de dados relacional a partir de uma planilha com dados não normalizados. O primeiro passo foi a construção de um diagrama ER (entidade-relacionamento) onde foram definimos as entidades, tabelas e relacionamentos esperados para seguir regras de negócio definidas pela Trybe, obedecendo a 3ª forma normal.
+Continuando nossos estudos sobre SQL, nesse trabalho treinamos nossa habilidade de construir um banco de dados relacional a partir de uma planilha com dados não normalizados. O primeiro passo foi a construção de um diagrama ER (entidade-relacionamento) onde foram definidas as entidades, tabelas e relacionamentos esperados, obedecendo a 3ª forma normal.
 
 **Objetivo do projeto**
 
