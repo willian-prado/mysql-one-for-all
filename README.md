@@ -2,16 +2,15 @@
 
 > Terceiro projeto do módulo de Back-end do curso de desenvolvimento web da Trybe.
 
-Neste projeto aplicamos mais conhecimentos adquiridos sobre SQL.
-Treinamos, principalmente, nossa habilidade de construir um banco de dados relacional a partir de uma planilha com dados não normalizados.
-Com o auxílio de um diagrama ER (entidade-relacionamento) definimos as entidades, tabelas e relacionamentos esperados para seguir regras
-de negócio previamente definidas, obedecendo a 3ª regra normal.
+**Contexto**
 
-### Objetivo do projeto
+Continuando nossos estudos sobre SQL, nesse trabalho treinamos nossa habilidade de construir um banco de dados relacional a partir de uma planilha com dados não normalizados. Utilizando um diagrama ER (entidade-relacionamento) cons definimos as entidades, tabelas e relacionamentos esperados para seguir regras de negócio definidas pela Trybe, obedecendo a 3ª forma normal.
+
+**Objetivo do projeto**
 
 Revisar todos os conceitos aprendidos até o momento. Inicialmente, construir um banco de dados a partir de uma tabela não normalizada, a qual deverá ser normalizada e populada. Depois, executar queries sobre ela com o intuito de encontrar as informações solicitadas.
 
-### Principais habilidades desenvolvidas nesse trabalho:
+**Principais habilidades desenvolvidas nesse trabalho**
 
   - Modelar um banco de dados
   - Identificar entidades , atributos e relacionamentos
@@ -21,15 +20,17 @@ Revisar todos os conceitos aprendidos até o momento. Inicialmente, construir um
   - Alterar tabelas existentes
   - Criar reações dinâmicas com TRIGGERS
 
+**Tecnologia utilizada**
+
+- <a href="https://www.mysql.com/"><img src="https://icon-library.com/images/mysql-icon/mysql-icon-3.jpg" title="MySQL" align="center" height="35"/> - MySQL</a>
+
 ---
 
 ### Lista de requisitos propostos pela Trybe:
 
 #### Obrigatórios
 
-# Requisitos do projeto
-
-## Desafio 1
+#### Desafio 1
 
 * Crie um banco com o nome de **`SpotifyClone`**.
 
@@ -101,27 +102,7 @@ VALUES
   ('exemplo de dados 2', 'exemplo de dados Y');
 ```
 
-O que será verificado:
-
-- Será validado se os planos estão na tabela normalizada.
-
-- Será validado se o histórico de reprodução está na tabela normalizada.
-
-- Será validado se as informações sobre pessoas seguindo artistas estão na tabela normalizada.
-
-- Será validado se os álbuns estão na tabela normalizada.
-
-- Será validado se os canções estão na tabela normalizada.
-
-- Será validado se as informações sobre pessoas usuárias estão na tabela normalizada.
-
-- Será validado se as informações sobre pessoas artistas estão na tabela normalizada.
-
-⚠️ Note que uma vez executado um teste, a sua base de dados `SpotifyClone` **será dropada**. Logo, **se atente** a salvar seu progresso nos arquivos de desafio! ⚠️
-
----
-
-## Desafio 2
+#### Desafio 2
 
 Crie uma `VIEW` chamada `estatisticas_musicais` que exiba três colunas:
 
@@ -135,13 +116,7 @@ Sua `VIEW` deve retornar a seguinte informação ao ser consultada:
 
 ![Estatísticas musicais](./images/estatisticas_musicais.png)
 
-O que será verificado:
-
-- Será validado se existe uma `VIEW` chamada `estatisticas_musicais` que exibe os dados corretos nas colunas **cancoes**, **artistas** e **albuns**".
-
----
-
-## Desafio 3
+#### Desafio 3
 
 Crie uma `VIEW` chamada `historico_reproducao_usuarios`. Essa `VIEW` deverá ter apenas duas colunas:
 
@@ -155,15 +130,7 @@ Sua `VIEW` deve retornar a seguinte informação, ao ser consultada:
 
 ![Histórico de reprodução das pessoas usuárias](./images/HistoricoReproducaoUsuarios.png)
 
-O que será verificado:
-
-- Será validado se existe uma `VIEW` chamada `historico_reproducao_usuarios` que exibe os dados corretos nas colunas **usuario** e **nome**".
-
-- Será validado se as colunas estão ordenadas de forma correta.
-
----
-
-## Desafio 4
+#### Desafio 4
 
 Crie uma `VIEW` com o nome `top_3_artistas` que deve mostrar somente as três pessoas artistas mais populares no banco `SpotifyClone`, possuindo as seguintes colunas:
 
@@ -177,15 +144,7 @@ Sua `VIEW` deve retornar a seguinte informação, ao ser consultada:
 
 ![Top 3 artistas](./images/top_3_artistas.png)
 
-O que será verificado:
-
-- Será validado se existe uma `VIEW` chamada `top_3_artistas` que exibe os dados corretos nas colunas **artista** e **seguidores**".
-
-- Será validado se as colunas estão ordenadas de forma correta.
-
----
-
-## Desafio 5
+#### Desafio 5
 
 Estamos fazendo um estudo das músicas mais tocadas e precisamos saber quais são as duas músicas mais tocadas no momento. Crie uma `VIEW` chamada `top_2_hits_do_momento` que possua duas colunas:
 
@@ -199,16 +158,7 @@ Sua `VIEW` deve retornar a seguinte informação, ao ser consultada:
 
 ![Top 2 hits do momento](./images/top_2_hits_do_momento.png)
 
-
-O que será verificado:
-
-- Será validado se existe uma `VIEW` chamada `top_2_hits_do_momento`, que exibe os dados corretos nas colunas **cancao** e **reproducoes**".
-
-- Será validado se as colunas estão ordenadas de forma correta.
-
----
-
-## Desafio 6
+#### Desafio 6
 
 Tendo como base o valor dos planos e o plano que cada pessoa usuária cadastrada possui no banco, queremos algumas informações sobre o faturamento da empresa. Crie uma `VIEW` chamada `faturamento_atual` que deve exibir quatro dados:
 
@@ -226,13 +176,7 @@ Sua `VIEW` deve retornar a seguinte informação, ao ser consultada:
 
 ![Faturamento atual](./images/faturamento_atual.png)
 
-O que será verificado:
-
-- Será validado se existe uma `VIEW` chamada `faturamento_atual`, que exibe os dados corretos nas colunas **faturamento_minimo**, **faturamento_maximo**, **faturamento_medio** e **faturamento_total**.
-
----
-
-## Desafio 7
+#### Desafio 7
 
 Mostre uma relação de todos os álbuns produzidos por cada pessoa artista, com a quantidade de seguidores que ela possui, de acordo com os detalhes a seguir. Para tal, crie uma `VIEW` chamada `perfil_artistas`, com as seguintes colunas:
 
@@ -248,27 +192,13 @@ Sua `VIEW` deve retornar a seguinte informação, ao ser consultada:
 
 ![PerfilArtistas](./images/perfil_artistas.png)
 
-O que será verificado:
-
-- Será validado se existe uma `VIEW` chamada `perfil_artistas`, que exibe os dados corretos nas colunas **artista**, **album** e **seguidores**.
-
-- Será validado se as colunas estão ordenadas de forma correta.
-
----
-
-## Desafio 8
+#### Desafio 8
 
 Crie uma trigger chamada `trigger_usuario_delete` que deve ser disparada sempre que uma pessoa usuária for excluída do banco de dados, refletindo essa exclusão em todas as tabelas que ela estiver.
 
 Teste a funcionalidade correta de sua trigger, fazendo a exclusão da usuária `"Thati"`.
 
-O que será verificado:
-
-- Será validado se ao excluir uma pessoa usuária do banco de dados a `trigger_usuario_delete` é ativada e a ação de exclusão reflete em todas as tabelas em que esta pessoa está presente.
-
----
-
-## Desafio 9
+#### Desafio 9
 
 Crie uma procedure chamada `albuns_do_artista` que recebe como parâmetro o nome de uma pessoa artista e em retorno deve exibir as seguintes colunas:
 
@@ -284,15 +214,7 @@ Confirme a execução correta da procedure, chamando-a e passando o nome igual a
 
 ![Álbuns da pessoa artista](./images/AlbunsDoArtista.png)
 
-O que será verificado:
-
-- Será validado se a procedure `albuns_do_artista` retorna a coluna **artista** contendo o nome da pessoa artista e a coluna **album** contendo o nome do album.
-
-- Será validado se as colunas estão ordenadas de forma correta.
-
----
-
-## Desafio 10
+#### Desafio 10
 
 Crie uma function chamada de `quantidade_musicas_no_historico` que exibe a quantidade de músicas que estão presentes atualmente no histórico de reprodução de uma pessoa usuária. Ao receber o código identificador da pessoa, exiba a quantidade de canções em seu histórico de reprodução.
 
@@ -300,14 +222,7 @@ Confirme a execução correta da function, chamando-a e passando o id para a pes
 
 ![Quantidade de músicas no histórico](./images/quantidade_musicas_no_historico.png)
 
-
-O que será verificado:
-
-- Será validado se a function `quantidade_musicas_no_historico`, ao receber o código identificador de uma pessoa usuária, retorna a quantidade correta de canções presentes no histórico de reprodução desta pessoa.
-
----
-
-## Desafio 11
+#### Desafio 11
 
 Crie uma `VIEW` chamada `cancoes_premium` que exiba o nome e a quantidade de vezes que cada canção foi tocada por pessoas usuárias do plano familiar ou universitário, de acordo com os detalhes a seguir:
 
@@ -321,8 +236,3 @@ Sua `VIEW` deve retornar a seguinte informação, ao ser consultada:
 
 ![Canções premium](./images/cancoes_premium.png)
 
-O que será verificado:
-
-- Será validado se existe uma `VIEW` chamada `cancoes_premium`, que exibe os dados corretos nas colunas **nome** e **reproducoes**.
-
-- Será validado se as colunas estão ordenadas de forma correta.
