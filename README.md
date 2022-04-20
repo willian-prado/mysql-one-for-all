@@ -1,10 +1,10 @@
 ## Projeto One For All
 
-> Terceiro projeto do módulo de Back-end do curso de desenvolvimento web da Trybe.
+> Terceiro projeto do módulo de Back-end do curso de desenvolvimento web da [Trybe](https://www.betrybe.com/)
 
 **Contexto**
 
-Continuando nossos estudos sobre SQL, nesse trabalho treinamos nossa habilidade de construir um banco de dados relacional a partir de uma planilha com dados não normalizados. O primeiro passo foi a construção de um diagrama ER (entidade-relacionamento) onde foram definidas as entidades, tabelas e relacionamentos esperados, obedecendo a 3ª forma normal.
+Continuando nossos estudos sobre SQL, nesse trabalho treinamos nossa habilidade de construir um banco de dados relacional a partir de uma planilha com dados não normalizados. 
 
 **Objetivo do projeto**
 
@@ -236,3 +236,6 @@ Sua `VIEW` deve retornar a seguinte informação, ao ser consultada:
 
 ![Canções premium](./images/cancoes_premium.png)
 
+---
+
+[Ir para a lista de projetos](https://github.com/willian-prado/trybe-records)
